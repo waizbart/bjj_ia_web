@@ -36,7 +36,7 @@ export default function UploadForm() {
     formData.append('file', selectedFile)
 
     try {
-      const res = await fetch(process.env.NEXT_PUBLIC_API_URL + '/analyze', {
+      const res = await fetch(process.env.NEXT_PUBLIC_API_URL + '/analyze/', {
         method: 'POST',
         body: formData,
       })
